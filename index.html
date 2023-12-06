@@ -41,7 +41,7 @@
                     <li><a id="m-menu-index-int" href="https://seasunadler.github.io/index/"
                             class="block py-4 text-white hover:text-dark">Главная</a></li>
                     <li><a id="m-menu-booking-int" href="https://seasunadler.github.io/booking/"
-                            class="block py-4 text-darkgray">Бронирование</a></li>
+                            class="block py-4 text-white">Бронирование</a></li>
                     <li><a id="m-menu-small-booking-int" href="https://seasunadler.github.io/free-date/"
                             class="block py-4 text-white hover:text-dark">Свободные даты</a></li>
                     <li><a id="m-menu-info-int" href="https://seasunadler.github.io/booking/info/"
@@ -67,9 +67,7 @@
         </section>
 
         <section id="about">
-            <!-- <div id="rc-small-bookings-widget-root"></div> -->
             <div id="rc-bookings-widget-root"></div>
-
         </section>
     </main>
     <footer class="bg-white py-10 md:py-10 h-[1000px]">
@@ -81,13 +79,25 @@
             </div>
         </div>
     </footer>
-    <!-- <button id="mode" class="btn fixed right-5 bottom-2 text-sm">mode</button> -->
     <script src="https://realtycalendar.ru/webpack/application.js?_t=96e16d8bfffff344a38a"></script>
     <script type="text/javascript">
         RC_BOOKINGS_WIDGET.init('cd8803779919fb268eb5271e241baba0');
     </script>
     <script src="./main.js"></script>
-   
+    <script>
+        if (
+            window.location.pathname ===
+            "/booking/"
+        )
+            document.getElementById("menu-booking-int").style.color = "#bc4e88";
+    </script>
+    <script>
+        if (
+            window.location.pathname ===
+            "/booking/"
+        )
+            document.getElementById("m-menu-booking-int").style.color = "#272727";
+    </script>
 </body>
 
 </html>
