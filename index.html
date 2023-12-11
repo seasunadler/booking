@@ -14,27 +14,27 @@
         <div class="container">
             <nav class="flex justify-between items-center py-7">
                 <div class="header-slug flex items-center mb-3">
-                    <h2 href="#" class="text-4xl text-lightred">seasunadler</h2>
+                    <h2 href="#" class="text-4xl text-clientcolor">seasunadler</h2>
                 </div>
                 <ul class="flex gap-12 md:hidden">
                     <li><a id="menu-index-int" href="https://seasunadler.github.io/index/"
-                            class="dark:text-white dark:hover:text-darkred font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Главная</a>
+                            class="dark:text-white dark:hover:text-clientcolor font-medium text-xl text-lightblack hover:text-clientcolor transition-colors lg:text-base">Главная</a>
                     </li>
                     <li><a id="menu-booking-int"
                             href="https://seasunadler.github.io/booking/"
-                            class="dark:text-darkred dark:hover:text-darkred font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Бронирование</a>
+                            class="dark:text-clientcolor dark:hover:text-clientcolor font-medium text-xl text-lightblack hover:text-clientcolor transition-colors lg:text-base">Бронирование</a>
                     </li>
                     <li><a id="menu-contacts-int" href="https://seasunadler.github.io/contacts/"
-                            class="dark:text-white dark:hover:text-darkred font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Контакты</a>
+                            class="dark:text-white dark:hover:text-clientcolor font-medium text-xl text-lightblack hover:text-clientcolor transition-colors lg:text-base">Контакты</a>
                     </li>
                 </ul>
 
                 <ul id="menu"
-                    class="hidden absolute left-6 right-6 top-24 border border-darkred bg-lightred flex-col items-center z-10">
+                    class="hidden absolute left-6 right-6 top-24 border border-clientcolor bg-clientcolor flex-col items-center z-10">
                     <li><a id="m-menu-index-int" href="https://seasunadler.github.io/index/"
                             class="block py-4 text-white hover:text-dark">Главная</a></li>
                     <li><a id="m-menu-booking-int" href="https://seasunadler.github.io/booking/"
-                            class="block py-4 text-white">Бронирование</a></li>
+                            class="block py-4 text-darkgray">Бронирование</a></li>
                     <li><a id="m-menu-contacts-int" href="https://seasunadler.github.io/contacts/"
                             class="block py-4 text-white hover:text-dark">Контакты</a></li>
                 </ul>
@@ -56,7 +56,9 @@
         </section>
 
         <section id="about">
+            <!-- <div id="rc-small-bookings-widget-root"></div> -->
             <div id="rc-bookings-widget-root"></div>
+
         </section>
     </main>
     <footer class="bg-white py-10 md:py-10 h-[1000px]">
@@ -68,10 +70,12 @@
             </div>
         </div>
     </footer>
+    <!-- <button id="mode" class="btn fixed right-5 bottom-2 text-sm">mode</button> -->
     <script src="https://realtycalendar.ru/webpack/application.js?_t=96e16d8bfffff344a38a"></script>
     <script type="text/javascript">
         RC_BOOKINGS_WIDGET.init('cd8803779919fb268eb5271e241baba0');
     </script>
+    <script src="./main.js"></script>
     <script src="./main.js"></script>
     <script>
         if (
